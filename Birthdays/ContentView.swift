@@ -16,7 +16,6 @@ struct ContentView: View {
     @State private var newName = ""
     @State private var newDate = Date.now
     
-    
     var body: some View {
         
         NavigationStack {
@@ -40,6 +39,8 @@ struct ContentView: View {
                         selection: $newDate, in: Date.distantPast...Date.now, displayedComponents: .date) {
                             TextField("Name", text: $newName)
                                 .textFieldStyle(.roundedBorder)
+                                .cornerRadius(10)
+                                
                         }
                         .padding(.horizontal)
                     
@@ -51,9 +52,15 @@ struct ContentView: View {
                         newDate = .now
                     }
                     .bold()
+                    .buttonStyle(.borderedProminent)
+                    .shadow(color: .blue, radius: 5)
+                    .disabled(newName.isEmpty)
+                    
+                    
                 }
                 .padding(.vertical, 20)
                 .background(.bar)
+                .opacity(0.99)
             }
             
             
@@ -62,6 +69,7 @@ struct ContentView: View {
             
         }
         .autocorrectionDisabled()
+        
     }
 }
 
