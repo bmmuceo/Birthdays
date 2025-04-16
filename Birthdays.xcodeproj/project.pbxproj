@@ -29,6 +29,25 @@
 		E0809B422DB01D0300C8C845 /* BirthdaysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirthdaysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E0809B5A2DB01EC000C8C845 /* Exceptions for "BirthdaysTests" folder in "Birthdays" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				BirthdaysApp.swift,
+			);
+			target = E0809B2A2DB01D0000C8C845 /* Birthdays */;
+		};
+		E0809B5B2DB01EC000C8C845 /* Exceptions for "BirthdaysTests" folder in "BirthdaysTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				BirthdaysApp.swift,
+			);
+			target = E0809B372DB01D0300C8C845 /* BirthdaysTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E0809B2D2DB01D0000C8C845 /* Birthdays */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -37,6 +56,10 @@
 		};
 		E0809B3B2DB01D0300C8C845 /* BirthdaysTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E0809B5A2DB01EC000C8C845 /* Exceptions for "BirthdaysTests" folder in "Birthdays" target */,
+				E0809B5B2DB01EC000C8C845 /* Exceptions for "BirthdaysTests" folder in "BirthdaysTests" target */,
+			);
 			path = BirthdaysTests;
 			sourceTree = "<group>";
 		};
